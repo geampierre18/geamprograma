@@ -70,10 +70,10 @@ class parcialgeampierrecristian:
         while True:
             print("=" * 18)
             print("GESTIÓN DE UNIVERSIDADES")
-            print("Agregar universidad")
-            print("Listar universidades")
+            print("nombre de la universidad")
+            print("Lista de universidades ingresadas")
             print("Volver al menú principal")
-            opcion = input("Seleccione una opción: ")
+            opcion = input("Selecciona una opción: ")
 
             if opcion == "1":
                 self.agregar_universidad()
@@ -97,7 +97,7 @@ class parcialgeampierrecristian:
 
     def listar_universidades(self):
         if not self.universidades:
-            print("No hay universidades registradas.")
+            print("No hay ninguna universidad")
         else:
             print("Listado de universidades:")
             for universidad in self.universidades:
@@ -112,14 +112,14 @@ class parcialgeampierrecristian:
             self.universidades = []
             print("Todos los datos ingresados han sido eliminados.")
         else:
-            print("Operación cancelada.")
+            print("Operación cancelada")
 
     def iniciar(self):
         while True:
             print("=" * 30)
             print("PARCIAL GEAMPIERRE Y CRISTIAN")
             print("Datos de la persona")
-            print("Gestionar universidades")
+            print("nombre de la universidad")
             print("Eliminar todos los datos")
             print("Salir")
             opcion = input("Seleccione una opción: ")
